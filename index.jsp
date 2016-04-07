@@ -152,7 +152,7 @@
         
         <div id="errore" style="color: red; font-size: 12px; text-align: center;"></div>
         
-        <form method="post" action="display.jsp">
+        <form method="post" action="#" onsubmit="return validate()">
             <!-- Primo gruppo di tabella -->
             <table>
                 <tbody>
@@ -279,7 +279,7 @@
                 <p style="color: #666; text-align: center; font-size: 10px;">&copy;mariacheline</p>         
             </footer>
             
-               <!--    
+                
             <script>
             function validate(){                              
                 /** validation for texts **/
@@ -369,6 +369,6 @@
             function error(message){
                 var err = document.getElementById('errore').innerHTML = message;;
             }
-            </script>-->
+            </script>
     </body>
 </html>
