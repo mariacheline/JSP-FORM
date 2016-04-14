@@ -230,12 +230,12 @@
                     
                     <tr>
                         <td>Qual'è la sezione che più ti ha interessato?
-                            <br><input type="checkbox" name="sezione[]" value="Info sui docenti">Info sui docenti
-                            <br><input type="checkbox" name="sezione[]" value="Info sugli insegnamenti">Info sugli insegnamenti
-                            <br><input type="checkbox" name="sezione[]" value="Info su ricevimenti">Info su ricevimenti
-                            <br><input type="checkbox" name="sezione[]" value="Il materiale didattico">Il materiale didattico
-                            <br><input type="checkbox" name="sezione[]" value="La news">Le news
-                            <br><input type="checkbox" name="sezione[]" value="Le proposte di tesi">Le proposte di tesi
+                            <br><input type="checkbox" name="sezione" value="Info sui docenti">Info sui docenti
+                            <br><input type="checkbox" name="sezione" value="Info sugli insegnamenti">Info sugli insegnamenti
+                            <br><input type="checkbox" name="sezione" value="Info su ricevimenti">Info su ricevimenti
+                            <br><input type="checkbox" name="sezione" value="Il materiale didattico">Il materiale didattico
+                            <br><input type="checkbox" name="sezione" value="La news">Le news
+                            <br><input type="checkbox" name="sezione" value="Le proposte di tesi">Le proposte di tesi
                         </td>
                     </tr>
                     
@@ -349,7 +349,7 @@
                 /** end validation for select boxes **/
                 
                 /** validation for checkboxes **/
-                var section = document.getElementsByName("sezione[]");
+                var section = document.getElementsByName("sezione");
                     for(var i = 0; i < section.length; i++){
                         if(section[i].checked === false){
                             error("Seleziona la sezione che ti ha piu interessato.");
